@@ -1,1 +1,0 @@
-Enunciado do desafio proposto: https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-02/d010/desafio-android.pdf
