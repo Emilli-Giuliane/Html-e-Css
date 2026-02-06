@@ -1,0 +1,1 @@
+Enunciado do desafio proposto: https://github.com/gustavoguanabara/html-css/blob/16b33c93740ac00b66d93f3cb9f7fcb6aeb5feb6/desafios/modulo-02/d012/desafio-cordel.pdf

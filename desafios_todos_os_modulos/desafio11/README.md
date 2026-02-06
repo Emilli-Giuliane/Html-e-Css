@@ -1,0 +1,1 @@
+Enunciado do desafio proposto: https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-02/d011/desafio-astronauta-1.pdf
