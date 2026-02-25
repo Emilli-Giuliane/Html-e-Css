@@ -17,9 +17,9 @@
                 <p>
                     Bem-vindo(a) novamente! Digite suas informações de login para continuar com as configurações de sua conta.
                 </p>
-                <form autocomplete="off" class="formulario">
+                <form autocomplete="on" class="formulario" method="get">
                     <span class="border-email-senha"><label for="iemail"><span class="material-symbols-outlined">person</span></label><input type="email" name="email" id="iemail" placeholder="Digite seu email" required></span><br>
-                    <span class="border-email-senha"><label for="isenha"><span class="material-symbols-outlined">vpn_key</span></label><input type="password" name="senha" id="isenha" minlength="8" placeholder="Sua senha" autocomplete="current-password" required></span>
+                    <span class="border-email-senha"><label for="isenha"><span class="material-symbols-outlined">vpn_key</span></label><input type="password" name="senha" id="isenha" minlength="8" maxlength="20" placeholder="Sua senha" autocomplete="current-password" required></span>
                     <input type="submit" value="Entrar" id="entrar">
                     <button type="button" id="recuperarsenha">Esqueci minha senha<span id="mailico" class="material-symbols-outlined">mail</span></button>
                 </form>

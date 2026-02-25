@@ -28,6 +28,7 @@ section {
     overflow:hidden;
     width:350px;
     height: 550px;
+
     transition: width 1s, height 1s;
     transition-timing-function: ease;
 }
@@ -60,6 +61,7 @@ div.maincontent {
     padding:13px 6px 0px 6px;
 }
 span.border-email-senha {
+    border-color: var(--corPrimaria);
     overflow: hidden;
     display: inline-flex;
     margin: 1px 0px;
@@ -75,21 +77,25 @@ span.border-email-senha {
     border-radius: 8px;
     width: 100%;
 }
-#isenha {
+#iemail, #isenha {
     background-color: var(--corSecundaria);
+    border:none;
 }
 #iemail:focus, #isenha:focus {
     outline: 2px solid var(--verdeEscuro);
+    background-color: white;
 }
 #entrar:hover, #recuperarsenha:hover {
     cursor:pointer;
     background-color: green;
     color:white;
+
     transition:.5s;
 }
 
 #entrar:active, #recuperarsenha:active {
     background-color: var(--verdeEscuro);
+    
     transition:0s;
 }
 
