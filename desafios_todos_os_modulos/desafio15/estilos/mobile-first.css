@@ -1,0 +1,114 @@
+:root {
+    --corPrimaria: darkmagenta;
+    --corSecundaria: rgb(12, 223, 163);
+    --verdeEscuro: rgb(6, 74, 55);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    background-color: var(--corPrimaria);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section {
+    box-shadow: 6px 10px 30px black;
+    display:inline-block;
+    background-color: white;
+    border-radius: 30px;
+    overflow:hidden;
+    width:350px;
+    height: 550px;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+}
+div#imagem {
+    width: 350px;
+    height: 150px;
+    display:block;
+    margin: auto;
+    background-image: url(../imagens/metal.jpg);
+    background-size: 100vh 100vw;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+div.maincontent {
+    padding: 20px 30px 0px 30px;
+}
+.maincontent > h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.maincontent > p {
+    margin-bottom: 20px;
+}
+
+.material-symbols-outlined{
+    color:aliceblue;
+    font-size: 30px;
+    padding:13px 6px 0px 6px;
+}
+span.border-email-senha {
+    overflow: hidden;
+    display: inline-flex;
+    margin: 1px 0px;
+    border-radius: 8px;
+    width: 100%;
+    height: 55px;
+    background-color: var(--corPrimaria);
+}
+
+.border-email-senha > input {
+    margin: 4px 2px 0px 0px;
+    height: 45px;
+    border-radius: 8px;
+    width: 100%;
+}
+#isenha {
+    background-color: var(--corSecundaria);
+}
+#iemail:focus, #isenha:focus {
+    outline: 2px solid var(--verdeEscuro);
+}
+#entrar:hover, #recuperarsenha:hover {
+    cursor:pointer;
+    background-color: green;
+    color:white;
+    transition:.5s;
+}
+
+#entrar:active, #recuperarsenha:active {
+    background-color: var(--verdeEscuro);
+    transition:0s;
+}
+
+#entrar, #recuperarsenha {
+    margin-top: 10px;
+    background-color: var(--corSecundaria);
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+}
+#recuperarsenha {
+    background-color: white;
+    border:1px solid var(--corSecundaria);
+}
+#mailico {
+    font-size: 16px;
+    color: var(--verdeEscuro);
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+}

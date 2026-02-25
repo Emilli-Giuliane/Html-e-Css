@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height:100vh;    
+}
+body {
+    background-image: url(../imagens/back-phone.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#menu {
+    display:none;
+}
+
+/* Navegation */
+
+nav {
+    display:block;
+    width: auto;
+    background-color: darkslategray;
+    padding:30px;
+    padding-bottom:0;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+nav #burger {
+    display:block;
+    color:white;
+    text-align: center;
+    background-color: dimgray;
+    border-radius: 30px;
+}
+
+nav ul {
+    list-style-type:none;
+}
+nav ul li {
+    display: block;
+    
+}
+nav a{
+    display: block;
+    padding: 10px;
+    margin: 2px;
+    background-color: dimgray;
+    text-decoration:none;
+    color:lightgrey
+}
+nav a:hover, nav #burger:hover {
+    background-color: rgb(228, 228, 228);
+    color:gray;
+    transition:0.5s;
+    cursor:pointer;
+}
+nav a:active, nav #burger:active {
+    background-color: rgb(52, 52, 52);
+    color:rgb(255, 255, 255);
+    transition:0s;
+
+}
+/* Main */
+
+main {
+    display: block;
+    background-color: rgba(218, 201, 176, 0.603);
+    width: 400px;
+    margin:auto;
+    padding:10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    box-sizing: border-box;
+}
+
+main img {
+    margin: auto;
+}
+img#mobile {display:block;}
+img#tablet {display:none;}
+img#laptop {display:none;}
+img#tv {display:none;}
+img#print {display:none;}

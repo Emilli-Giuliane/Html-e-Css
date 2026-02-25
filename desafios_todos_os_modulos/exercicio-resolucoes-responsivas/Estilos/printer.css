@@ -1,0 +1,21 @@
+main {
+    border: 1px solid black;
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: none;
+}
+
+main h1 {
+    font-family:'Courier New', Courier, monospace;
+    text-shadow: none;
+}
+
+main::after{
+    content: "Esse é um exemplo de media query para impressão";
+    text-decoration:overline;
+}
+
+img#mobile {display:none;}
+img#tablet {display:none;}
+img#laptop {display:none;}
+img#tv {display:none;}
+img#print {display:block;}

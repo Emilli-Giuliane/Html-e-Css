@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="style.css" media="all">
+	<link rel="stylesheet" href="landscape.css" media="screen and (orientation: landscape)">
+	<link rel="stylesheet" href="portrait.css" media="screen and (orientation:portrait)">
+	<link rel="stylesheet" href="print.css" media="print">
+	
+</head>
+<body>
+	<form action="script.js" method="GET">
+			<fieldset>
+				<legend>Dados do aluno</legend>
+				<label for="idnome">nome</label><input type="text" name="nome" id="idnome" size="10" placeholder="Digite seu nome aqui" autocomplete="username"><br>
+				<label for="idsobrenome">sobrenome</label><input type="text" name="sobrenome" id="idsobrenome"><br>
+				<label for="idpass">senha</label><input type="password" name="senha" id="idpass" required minlength="8" autocomplete="current-password"><br>
+				<label for="imedia">Média</label><input type="number" name="media" id="imedia" placeholder="Média do aluno" step="0.5" min="0" max="10" value="5" required><br>
+				<label for="bdaymonth">Birthday (month and year):</label>
+				<input type="month" id="bdaymonth" name="bdaymonth" min="1900-01" max="2025-12"><br>
+				<label for="itelefone">telefone: </label><input type="tel" name="telefone" id="itelefone" placeholder="Digite seu telefone aqui" autocomplete="tel" pattern="\(d\{2}\)\d{5}-\d{4}"><br>
+				<label for="iemail">Email</label><input type="email" name="email" id="iemail" placeholder="Digite seu email aqui" autocomplete="email" required><br>
+			</fieldset>
+
+			<label for="idia">Dia da prova</label><input type="date" name="dia" id="idia" value="2020-7"><br>
+			<label for="ihora">Hora da prova</label><input type="time" name="hora" id="ihora"><br>
+
+			<fieldset>
+				<legend>Matérias</legend>
+				<input type="checkbox" name="materias" id="imatematica" value="matematica" checked><label for="imatematica">Matemática</label><br>
+				<input type="checkbox" name="materias" id="ifisica" value="fisica" checked><label for="ifisica">Física</label><br>
+				<input type="checkbox" name="materias" id="iquimica" value="quimica"><label for="iquimica">Química</label><br>
+				<input type="checkbox" name="materias" id="ibiologia" value="biologia"><label for="ibiologia">Biologia</label><br>
+				<input type="checkbox" name="materias" id="ihistoria" value="historia"><label for="ihistoria">História</label>
+				<legend>Opção de linguagens</legend>
+				<input type="radio" name="lingua" id="iingles" value="ingles"><label for="iingles">Inglês</label><br>
+				<input type="radio" name="lingua" value="espanhol" id="iespanhol"><label for="iespanhol">Espanhol</label>
+			</fieldset>
+			<input type="color" name="cor" id="icor" value="#ff0000" oninput="body.style.backgroundColor = icor.value"><label for="icor">Cor favorita</label><br>
+			<input type="hidden" name="id" id="id" value="12345"><label for="id">escondido</label><br>
+
+			<input type="range" name="range" name="range" id="irange" min="0" max="10" value="5" oninput="ival.innerHTML = Number(irange.value)"><label for="irange">Range: </label><output id="ival">5</output><br>
+
+			<input for="ifoto" type="file" name="foto" id="ifoto"><label for="ifoto">Foto de perfil do aluno</label><br>
+			<label>Estado</label> <select name="estado" id="iestado">
+				<option value="" selected>--- Escolha uma opção ---</option>
+				<optgroup label="Região Suldeste">
+					<option value="SP">São Paulo</option>
+					<option value="RJ">Rio de Janeiro</option>
+					<option value="MG">Minas Gerais</option>
+					<option value="ES">Espírito Santo</option>
+				</optgroup>
+				<optgroup label="Região Sul">
+					<option value="PR">Paraná</option>
+					<option value="SC">Santa Catarina</option>
+					<option value="RS">Rio Grande do Sul</option>
+				</optgroup>
+				</select><br>
+				<label for="icidade">Cidade: </label><input type="text" name="cidade" id="icidade" list="cidades">
+				<datalist id="cidades">
+					<option value="São Paulo">São Paulo</option>
+					<option value="Rio de Janeiro">Rio de Janeiro</option>
+					<option value="Belo Horizonte">Belo Horizonte</option>
+					<option value="Vitória">Vitória</option>
+				</datalist><br>
+				<label for="msg">Mensagem:</label>
+				<textarea name="msg" id="msg" cols="10" rows="5">olá</textarea><br>
+				
+				<label for="num1">Numero 1: </label>
+				<input type="number" id="num1" oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value)">
+				<br>	
+				<label for="num2">Numero 2: </label>
+				<input type="number" id="num2" oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value)">
+				<br>
+				<label>Resultado da soma: </label>
+				<output id="isoma">0</output><br>
+
+				<label for="iano">Em que ano você nasceu? </label>
+				<input type="number" id="iano" min="1900" max="2026" oninput="idade.innerHTML = 2026 - Number(iano.value)">
+				<output id="idade">-</output><br>
+
+			<input type="submit" value="Enviar"><br>
+			<input type="reset" value="Limpar"><br>
+	</form>
+</body>
+</html>
