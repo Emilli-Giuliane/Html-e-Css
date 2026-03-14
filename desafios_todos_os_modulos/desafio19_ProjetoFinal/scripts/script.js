@@ -9,10 +9,10 @@ temaEscuro(temasalvo === 'escuro');
 function temaEscuro(tipo) {
   if (tipo == true) {
     body.classList.add('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    botao.innerHTML = '<span class="material-symbols-outlined">bedtime</span>';
   } else {
     body.classList.remove('escuro');
-    botao.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    botao.innerHTML = '<span class="material-symbols-outlined">sunny</span>';
   }
 }
 
@@ -20,21 +20,4 @@ botao.addEventListener('click', () => {
   const isescuro = body.classList.toggle('escuro');
   temaEscuro(isescuro);
   localStorage.setItem('tema', isescuro ? 'escuro' : 'claro');
-});
-
-// Scroll suave para links de navegação
-const navLinks = document.querySelectorAll('#menu ul a.link');
-navLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      const headerHeight = document.querySelector('header').offsetHeight;
-      const targetPosition = target.offsetTop - headerHeight - 20;
-      window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-      });
-    }
-  });
 });

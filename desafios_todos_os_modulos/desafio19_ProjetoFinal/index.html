@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portifólio</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet"/>
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="preload" as="script" href="scripts/script.js">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <a href="#ficha">
+                <a href="#">
                     <li>
                         <span class="material-symbols-outlined">home</span>
                     </li>
@@ -36,7 +37,9 @@
                     </li>
                 </a>
                 <li>
-                    <span class="material-symbols-outlined">bedtime</span>
+                    <a href="#" id="botao-tema">
+                        <span class="material-symbols-outlined">bedtime</span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -51,11 +54,11 @@
             código aberto.
         </p>
         <div class="redessociais">
-            <a href="#" target="_blank"><img src="imagens/linkedin-icon.png"></a>
-            <a href="#" target="_blank"><img src="imagens/github-icon.png"></a>
-            <a href="#" target="_blank"><img src="imagens/youtube-icon.png"></a>
-            <a href="#" target="_blank"><img src="imagens/instagram-icon.png"></a>
-            <a href="#" target="_blank"><img src="imagens/web-icon.png"></a>
+            <a href="#" target="_blank" rel="nofollow"><img src="imagens/linkedin-icon.png"></a>
+            <a href="#" target="_blank" rel="nofollow"><img src="imagens/github-icon.png"></a>
+            <a href="#" target="_blank" rel="nofollow"><img src="imagens/youtube-icon.png"></a>
+            <a href="#" target="_blank" rel="nofollow"><img src="imagens/instagram-icon.png"></a>
+            <a href="#" target="_blank" rel="nofollow"><img src="imagens/web-icon.png"></a>
         </div>
     </div>
     <main>
@@ -196,14 +199,16 @@
                             Projeto construído para treinar conteúdos flexíveis usando CSS FlexBox para mostrar um Albúm de
                             fotos.
                         </p>
-                        <span class="saiba_mais">Saiba mais</span>
-                        <div class="saiba_mais_content"> <!-- Display: none-->
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, veritatis facilis quasi
-                                perspiciatis culpa laboriosam similique, exercitationem odit ducimus consequatur iure molestias
-                                doloremque ex libero veniam. Nulla sequi porro laboriosam?
-                            </p>
-                        </div>
+                        <details class="saiba_mais">
+                            <summary>Saiba mais</summary>
+                            <div class="saiba_mais_content"> <!-- Display: none-->
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, veritatis facilis quasi
+                                    perspiciatis culpa laboriosam similique, exercitationem odit ducimus consequatur iure molestias
+                                    doloremque ex libero veniam. Nulla sequi porro laboriosam?
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -218,14 +223,16 @@
                             Projeto construído para treinar responsividade e formulários em uma das telas mais populares em
                             sistemas.
                         </p>
-                        <span class="saiba_mais">Saiba mais</span>
-                        <div class="saiba_mais_content"> <!-- Display: none-->
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus aliquam totam quos,
-                                molestiae eius ut reprehenderit fugit optio beatae. Dolorem, nisi! Corrupti aut minima aliquam
-                                cum officia recusandae facilis?
-                            </p>
-                        </div>
+                        <details class="saiba_mais">
+                            <summary>Saiba mais</summary>
+                            <div class="saiba_mais_content"> <!-- Display: none-->
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium natus aliquam totam quos,
+                                    molestiae eius ut reprehenderit fugit optio beatae. Dolorem, nisi! Corrupti aut minima aliquam
+                                    cum officia recusandae facilis?
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -240,14 +247,16 @@
                             Projeto construído para treinar responsividade e multiplos de media queries e divulgar suas
                             principais redes sociais.
                         </p>
-                        <span class="saiba_mais">Saiba mais</span>
-                        <div class="saiba_mais_content"> <!-- Display: none-->
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure quod, magnam dolor porro
-                                maiores omnis placeat iusto, beatae nemo molestiae labore ratione, veritatis facilis eveniet
-                                pariatur libero adipisci unde.
-                            </p>
-                        </div>
+                        <details class="saiba_mais">
+                            <summary>Saiba mais</summary>
+                            <div class="saiba_mais_content"> <!-- Display: none-->
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe iure quod, magnam dolor porro
+                                    maiores omnis placeat iusto, beatae nemo molestiae labore ratione, veritatis facilis eveniet
+                                    pariatur libero adipisci unde.
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -261,14 +270,16 @@
                         <p>
                             Projeto construído para treinar conteúdos e imagens dinâmicas com história do sistema Android.
                         </p>
-                        <span class="saiba_mais">Saiba mais</span>
-                        <div class="saiba_mais_content"> <!-- Display: none-->
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit officia similique
-                                quibusdam ipsum architecto ad dolorum officiis fuga vitae, deserunt quasi eligendi inventore
-                                expedita autem at animi vero sed?
-                            </p>
-                        </div>
+                        <details class="saiba_mais">
+                            <summary>Saiba mais</summary>
+                            <div class="saiba_mais_content"> <!-- Display: none-->
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit officia similique
+                                    quibusdam ipsum architecto ad dolorum officiis fuga vitae, deserunt quasi eligendi inventore
+                                    expedita autem at animi vero sed?
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -283,14 +294,16 @@
                             Projeto construído para treinar efeito paralax em imagens e a apresentação de conteúdo em diversos
                             tamanhos de tela.
                         </p>
-                        <span class="saiba_mais">Saiba mais</span>
-                        <div class="saiba_mais_content"> <!-- Display: none-->
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid recusandae debitis
-                                dolorum, nulla consequatur id optio provident, atque harum quae. Repudiandae obcaecati itaque
-                                laudantium voluptate tempore, iste doloremque assumenda!
-                            </p>
-                        </div>
+                        <details class="saiba_mais">
+                            <summary>Saiba mais</summary>
+                            <div class="saiba_mais_content"> <!-- Display: none-->
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquid recusandae debitis
+                                    dolorum, nulla consequatur id optio provident, atque harum quae. Repudiandae obcaecati itaque
+                                    laudantium voluptate tempore, iste doloremque assumenda!
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -304,14 +317,16 @@
                         <p>
                             Projeto construído para treinar inserção de vídeos em nosso site, além da navegação entre páginas.
                         </p>
-                        <span class="saiba_mais">Saiba mais</span>
-                        <div class="saiba_mais_content"> <!-- Display: none-->
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptas quis! Totam assumenda
-                                velit molestias, dolores laboriosam consectetur magnam reiciendis et esse aliquid explicabo
-                                cupiditate ducimus facere facilis repellat iste.
-                            </p>
-                        </div>
+                        <details class="saiba_mais">
+                            <summary>Saiba mais</summary>
+                            <div class="saiba_mais_content"> <!-- Display: none-->
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptas quis! Totam assumenda
+                                    velit molestias, dolores laboriosam consectetur magnam reiciendis et esse aliquid explicabo
+                                    cupiditate ducimus facere facilis repellat iste.
+                                </p>
+                            </div>
+                        </details>
                     </div>
                 </div>
             </div>
@@ -325,6 +340,7 @@
             educacionais
         </p>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
