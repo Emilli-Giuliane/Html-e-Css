@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 600px;
+}
+.section1 {
+    display: flex;
+    flex-flow: column;
+    align-content: space-around;
+
+
+    margin: 4px;
+    background-color: rgba(171, 144, 111, 0.582);
+}
+.firstdiv {
+    display:flex;
+    flex-flow: row wrap-reverse;
+    flex-basis: 300px;
+}
+
+.firstdiv div {
+    flex: 1 1 300px;
+}
+
+.seconddiv {
+    display:flex;
+    flex-flow: row wrap;
+}
+.seconddiv div {
+    flex: 1 1 300px;
+}
